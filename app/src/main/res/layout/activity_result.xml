@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".ResultActivity">
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cd"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:src="@drawable/dota"
+            android:scaleType="centerCrop" />
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:id="@+id/txttl"
+        android:layout_toRightOf="@id/cd"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/text"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="Title">
+    </TextView>
+    <TextView
+        android:id="@+id/txtdevelope"
+        android:layout_marginTop="8dp"
+        android:textSize="13dp"
+        android:layout_below="@id/txttl"
+        android:layout_toRightOf="@id/cd"
+        android:textColor="@color/text2"
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developer">
+    </TextView>
+    <ImageView
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imgstar"
+        android:layout_marginTop="40dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/star3">
+    </ImageView>
+    <TextView
+        android:id="@+id/txtrating"
+        android:textSize="15dp"
+        android:layout_below="@id/imgstar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="44dp"
+        android:textColor="@color/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9.8"></TextView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardbtn"
+        android:layout_below="@id/cd"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:cardBackgroundColor="@color/text2"
+        android:clickable="true"
+        android:onClick="downloadbtn"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtbtn"
+                android:text="DONWLOAD"
+                android:textColor="@color/text"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"></TextView>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:id="@+id/idabout"
+        android:layout_below="@id/cardbtn"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About This Gmae">
+    </TextView>
+    <TextView
+        android:id="@+id/txtdesc"
+        android:layout_below="@id/idabout"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dota 2 is a multiplayer online battle Arena game, and is a sequel to Defense of the Ancients mod in Warcraft 3: Reign of Chaos and Warcraft 3: The Frozen Throne.">
+    </TextView>
+
+
+
+
+</RelativeLayout>

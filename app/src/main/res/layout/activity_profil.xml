@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            app:cardBackgroundColor="@color/navtop"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgcircle"
+            android:layout_width="130dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pro"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_below="@id/imgcircle"
+            android:paddingBottom="30dp"
+            android:text="IRFAN KURNIAWAN"
+            android:textColor="@color/line"
+            android:textSize="20dp"></TextView>
+    </RelativeLayout>
+    <android.support.v7.widget.CardView
+        android:layout_below="@id/lr"
+        android:id="@+id/idcar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:cardBackgroundColor="@color/text3">
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_below="@id/idcar"
+        android:id="@+id/idcar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/email"
+            android:paddingTop="10dp"
+            android:text="Email Address"
+            android:paddingLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/eemail"
+            android:layout_below="@id/email"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:text="shinigaminoirfan@gmail.com"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_below="@id/idcar2"
+        android:id="@+id/idcar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/date"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Date of Birth"
+            android:textSize="15dp"
+            android:textColor="@color/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/edate"
+            android:layout_below="@id/date"
+            android:paddingTop="30dp"
+            android:text="Oct 14"
+            android:paddingLeft="10dp"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

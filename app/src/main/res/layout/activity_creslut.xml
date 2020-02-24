@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".CReslutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cd"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:src="@drawable/honkaicover"
+            android:scaleType="centerCrop" />
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:id="@+id/txttl"
+        android:layout_toRightOf="@id/cd"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/text"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="Honkai Impact 3">
+    </TextView>
+    <TextView
+        android:id="@+id/txtdevelope"
+        android:layout_marginTop="8dp"
+        android:textSize="13dp"
+        android:layout_below="@id/txttl"
+        android:layout_toRightOf="@id/cd"
+        android:textColor="@color/text2"
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="miHoYo">
+    </TextView>
+    <ImageView
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imgstar"
+        android:layout_marginTop="40dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/star3">
+    </ImageView>
+    <TextView
+        android:id="@+id/txtrating"
+        android:textSize="15dp"
+        android:layout_below="@id/imgstar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="44dp"
+        android:textColor="@color/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9.9"></TextView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardbtn"
+        android:layout_below="@id/cd"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:cardBackgroundColor="@color/text2"
+        android:clickable="true"
+        android:onClick="downloadbtn"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtbtn"
+                android:text="DONWLOAD"
+                android:textColor="@color/text"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"></TextView>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:id="@+id/idabout"
+        android:layout_below="@id/cardbtn"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About This Gmae">
+    </TextView>
+    <TextView
+        android:id="@+id/txtdesc"
+        android:layout_below="@id/idabout"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The core gameplay of Honkai Impact 3rd has players control a team of up to three characters, known as Valkyries, to fight against various enemies. During battle, players may freely move their character around the battlefield and switch between their three deployed Valkyries on the fly to adapt to various enemy types. Each Valkyrie has unique attack, evasion, switch, and ultimate skills, as well as a rock-paper-scissors-based character type to fulfill different team roles. Valkyrie stats and skills can be customized with various weapons and equipment. New equipment (known as Stigmata), weapons, and Valkyries can obtained either through in-game crafting or through a gacha system">
+    </TextView>
+    <TextView
+        android:id="@+id/idpreview"
+        android:layout_below="@id/txtdesc"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preview">
+    </TextView>
+
+    <HorizontalScrollView
+        android:id="@+id/scrl"
+        android:layout_below="@id/idpreview"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/imgscr"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+    </HorizontalScrollView>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
